@@ -411,7 +411,7 @@ export default function Form({ formData, onChange, onSubmit }) {
           >
             <option value="">Select an option</option>
             <option value="No">No</option>
-            <option value="CR ACC:">CR ACCOUNT</option>
+            <option value="CR ACCOUNT">CR ACCOUNT</option>
             <option value="OPEN LOWFILL">OPEN LOWFILL</option>
           </select>
         </div>
