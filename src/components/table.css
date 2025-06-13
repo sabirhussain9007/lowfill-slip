@@ -1,0 +1,12 @@
+.txt {
+font-weight: bold;
+font-size: 14PX !important;
+padding-bottom: 2px !important;
+padding-left: 2px !important;
+}
+.txt2 {
+font-weight: bold;
+font-size: 10PX !important;
+padding: 3px !important;
+/* padding-left: 2px !important; */
+}
