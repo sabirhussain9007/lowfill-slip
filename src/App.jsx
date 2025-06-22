@@ -318,7 +318,7 @@ const App = () => {
 
 
 
-// Function to handle PDF download
+// // Function to handle PDF download
   const handleDownload = async () => {
     if (!downloadRef.current) return;
 
@@ -376,9 +376,7 @@ const App = () => {
 
 
 
-
-
-
+  
 
   // Function to clear local storage and reset dataList
   const handleClearLocalStorage = () => {
@@ -404,23 +402,23 @@ const App = () => {
         <button
           type="button"
           onClick={() => setView('form')}
-          className={`py-2 px-4 rounded-lg font-semibold transition-colors ${view === 'form' ? 'bg-blue-600 text-white' : 'bg-white border border-blue-600 text-blue-600 hover:bg-blue-100'}`}
+          className={`py-2 px-2 rounded-lg font-semibold transition-colors ${view === 'form' ? 'bg-blue-600 text-white' : 'bg-white border border-blue-600 text-blue-600 hover:bg-blue-100'}`}
         >
           Show Form
         </button>
         <button
           type="button"
           onClick={() => setView('table')}
-          className={`py-2 px-4 rounded-lg font-semibold transition-colors ${view === 'table' ? 'bg-blue-600 text-white' : 'bg-white border border-blue-600 text-blue-600 hover:bg-blue-100'}`}
+          className={`py-2 px-2 rounded-lg font-semibold transition-colors ${view === 'table' ? 'bg-blue-600 text-white' : 'bg-white border border-blue-600 text-blue-600 hover:bg-blue-100'}`}
         >
-          Show Table
+          Show SLIP
         </button>
         <button
           type="button"
           onClick={handleClearLocalStorage}
-          className="py-2 px-4 rounded-lg font-semibold bg-red-600 text-white hover:bg-red-700 transition-colors"
+          className="py-2 px-1 rounded-lg font-semibold bg-red-600 text-white hover:bg-red-700 transition-colors"
         >
-          Clear All
+          Clear All SLIPS
         </button>
       </div>
 

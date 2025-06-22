@@ -1,5 +1,6 @@
 
 import React from 'react';
+import pblLogo from '../assets/pbl logo.gif'
 import './table.css';
 
 export default function UserDataTable({ data }) {
@@ -45,11 +46,11 @@ export default function UserDataTable({ data }) {
             fontFamily:
               '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
           }}>
-      {/* <img
-          src="/assets/pbl-Ao8xM0q7.gif"
+      <img
+          src={pblLogo}
           alt="Logo"
-          className="absolute top-2 left-2 w-[110px] h-[38px]"
-        /> */}
+          className="absolute top-8 left-10 w-[150px] h-[50px]"
+        />
 
 
         <table className="w-[700px] h-[1035px] m-0 p-2 border-4 border-black border-collapse">
