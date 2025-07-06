@@ -45,7 +45,7 @@ const App = () => {
     regular250Bottle: '',
     regular250Case: '',
     sting240Bottle: '',
-    sting249Case: '',
+    sting240Case: '',
     slice240Bottle: '',
     slice240Case: ''
 
@@ -102,10 +102,12 @@ const App = () => {
         slcMtCase, // Optional
         stingMtBot, // Optional
         stingMtCase, // Optional
+        aquafina6ltrBottle,
+        aquafina6ltrCase,
         regular250Bottle,// Optional
         regular250Case, // Optional
         sting240Bottle, // Optional
-        sting249Case, // Optional
+        sting240Case, // Optional
         slice240Bottle, // Optional
         slice240Case, // Optional
         can250Bottle, // Optional
@@ -187,10 +189,12 @@ const App = () => {
       slcMtCase: slcMtCase?.trim(),
       stingMtBot: stingMtBot?.trim(),
       stingMtCase: stingMtCase?.trim(),
+      aquafina6ltrBottle: aquafina6ltrBottle?.trim(),
+      aquafina6ltrCase: aquafina6ltrCase?.trim(),
       regular250Bottle: regular250Bottle?.trim(),
       regular250Case: regular250Case?.trim(),
       sting240Bottle: sting240Bottle?.trim(),
-      sting249Case: sting249Case?.trim(),
+      sting240Case: sting240Case?.trim(),
       slice240Bottle: slice240Bottle?.trim(),
       slice240Case: slice240Case?.trim(),
       can250Bottle: can250Bottle?.trim(),
@@ -262,10 +266,12 @@ const App = () => {
       slcMtCase: '',
       stingMtBot: '',
       stingMtCase: '',
+      aquafina6ltrBottle: '',
+      aquafina6ltrCase: '',
       regular250Bottle: '',
       regular250Case: '',
       sting240Bottle: '',
-      sting249Case: '',
+      sting240Case: '',
       slice240Bottle: '',
       slice240Case: '',
       can250Bottle: '',
@@ -398,7 +404,7 @@ const App = () => {
 
   return (
     <div className="p-4 max-h-auto overflow-auto flex flex-col bg-slate-800 rounded-lg shadow-lg">
-      <div className="flex gap-3 mb-4">
+      <div className="flex gap-3 mb-2">
         <button
           type="button"
           onClick={() => setView('form')}
@@ -427,7 +433,7 @@ const App = () => {
       )}
       {view === 'table' && (
         <>
-          <div ref={downloadRef} className="bg-slate-300 p-3 rounded-lg shadow flex flex-wrap w-[1600px] max-h-auto overflow-auto">
+          <div ref={downloadRef} className="bg-slate-300 p-3 rounded-lg shadow flex flex-wrap w-[1540px] max-h-auto overflow-auto">
             <Table data={dataList} />
           </div>
           <button

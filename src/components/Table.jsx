@@ -41,7 +41,7 @@ export default function UserDataTable({ data }) {
   return (
     <>
       {data.map((item, index) => (
-        <div key={index} className="relative w-[740px] h-[1079px] m-5 p-5 bg-white shadow-lg rounded-lg overflow-hidden"
+        <div key={index} className="relative w-[740px] h-[1060px] m-2 p-2 bg-white shadow-lg rounded-lg overflow-hidden"
           style={{
             fontFamily:
               '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif',
@@ -53,7 +53,7 @@ export default function UserDataTable({ data }) {
         />
 
 
-        <table className="w-[700px] h-[1035px] m-0 p-2 border-4 border-black border-collapse">
+        <table className="w-[720px] h-[1042px] m-1 p-2 border-4 border-black border-collapse">
           <tbody>
             <tr>
               <td colSpan={14} className="text-center text-sm font-sans py-1 font-bold">
@@ -165,12 +165,21 @@ export default function UserDataTable({ data }) {
             </tr>
 
             {/* Further product rows */}
+
+            <tr>
+              <td colSpan={3} className="txt border border-black txt2">Aquafina 6 LTR</td>
+              <td colSpan={2} className="txt border border-black txt2 text-center">{item.aquafina6ltrBottle}</td>
+              <td colSpan={1} className="txt border border-black txt2 text-center">{item.aquafina6ltrCase}</td>
+              <td colSpan={3} rowSpan={5} className="txt border border-black txt2"></td>
+              <td colSpan={3} rowSpan={5} className="txt border border-black txt2"></td>
+            </tr>
+            <tr></tr>
+
             <tr>
               <td colSpan={3} className="txt border border-black txt2">REG 250ML</td>
               <td colSpan={2} className="txt border border-black txt2 text-center">{item.regular250Bottle}</td>
-              <td className="txt border border-black txt2 text-center">{item.regular250Case}</td>
-              <td colSpan={3} rowSpan={3} className="txt border border-black txt2"></td>
-              <td colSpan={3} rowSpan={3} className="txt border border-black txt2"></td>
+              <td colSpan={1} className="txt border border-black txt2 text-center">{item.regular250Case}</td>
+              
             </tr>
             <tr>
               <td colSpan={3} className="txt border border-black txt2">Sting 240ml</td>
